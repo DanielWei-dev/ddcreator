@@ -63,7 +63,9 @@ Wei Dong 54928382@qq.com
 
 # 使用手册
 
-建设中。。。
+具体手册建设中。。。
+
+API手册可以查阅[ DDCreator PHPDoc](https://apidoc.gitee.com/dongdingsoft/ddcreator)
 
 
 
