@@ -1,0 +1,46 @@
+{
+  "type": "think-admin-plugin",
+  "name": "wd/ddadmin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Admin Plugin for ddcreator",
+  "require": {
+    "php": ">7.1",
+    "ext-json": "*",
+    "topthink/framework": "^6.0|^8.0",
+    "topthink/think-view": "^1.0|^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\admin\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "app\\admin\\Service"
+      ]
+    },
+    "config": {
+      "type": "module",
+      "name": "系统后台管理",
+      "document": "#",
+      "description": "后台基础管理模块，系统账号及安全配置管理。"
+    },
+    "plugin": {
+      "copy": {
+        "src": "!app/admin",
+        "stc/database": "database/migrations"
+      },
+      "clear": true
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "wd/ddinstall": true
+    }
+  }
+}

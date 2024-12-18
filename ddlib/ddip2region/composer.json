@@ -1,0 +1,22 @@
+{
+  "type": "library",
+  "name": "wd/ddip2region",
+  "version": "1.0.0",
+  "description": "Ip2Region for PHP",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "WeiDong",
+      "email": "54928382@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "classmap": [
+      "Ip2Region.php",
+      "XdbSearcher.php"
+    ]
+  }
+}
